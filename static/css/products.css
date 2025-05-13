@@ -1,0 +1,25 @@
+.products-section {
+    padding: 2rem;
+    font-family: sans-serif;
+  }
+  .products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .product-category {
+    margin-bottom: 2rem;
+    display: grid;
+    place-content: center;
+  }
+  .product-category h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  .product-category ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  .product-category li {
+    margin-bottom: 0.5rem;
+  }

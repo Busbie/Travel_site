@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block main %}
+<section class="section1">
+        <div id="down">
+          <p>
+            Start your journey <br />
+            by one click, explore <br />
+            beautiful world!
+          </p>
+          <div class="secondtext">
+            <p>
+              Plan and book your perfect trip with expert advice, travel tips,
+              destination information and inspiration from us!
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'Images/GooglePlay.svg' %}" alt="GooglePlay">
+            <img src="{% static 'Images/AppStore.svg' %}" alt="GooglePlay">
+          </div>
+        </div>
+        <div>
+          <img src="{% static 'Images/illus.svg' %}" alt="image here" />
+        </div>
+      </section>
+      <section class="section2">
+        <h1 class="sec2-text1">Popular Destinations</h1>
+        <p class="sec2-text2">
+          Vacations to make your experience enjoyable in Indonesia!
+        </p>
+        <div class="imgs">
+          <div class="sec2-1">
+            <div class="img-wrap">
+              <img src="{% static 'Images/Rectangle Sec2-1.png' %}" alt="Image here" />
+            </div>
+            <div class="together">
+            <div class="locate"><img src="{% static 'Images/Location.png' %}" alt="location"></div>
+            <p class="sec2-texts1">Manggarai Barat</p>
+            </div>
+            <p class="sec2-texts2">Flores Road Trip 3D2N</p>
+            <p class="sec2-texts3">3 Days</p>
+            <p class="sec2-texts4">Rp 6.705.000 /orang</p>
+          </div>
+          <div class="sec2-1">
+            <div class="img-wrap">
+              <img src="{% static 'Images/Rectangle Sec2-2.png' %}" alt="Image here" />
+            </div>
+            <div class="together">
+            <div class="locate"><img src="{% static 'Images/Location.png' %}" alt="location"></div>
+            <p class="sec2-texts1">Bogor</p>
+            </div>
+            <p class="sec2-texts2">Forrester Glamping Co Bogor</p>
+            <p class="sec2-texts3">1 Days</p>
+            <p class="sec2-texts4">Rp 1.205.000 /malam</p>
+          </div>
+          <div class="sec2-1">
+            <div class="img-wrap">
+              <img src="{% static 'Images/Rectangle Sec2-3.png' %}" alt="Image here" />
+            </div>
+            <div class="together">
+            <div class="locate"><img src="{% static 'Images/Location.png' %}" alt="location"></div>
+            <p class="sec2-texts1">Jakarta</p>
+            </div>
+            <p class="sec2-texts2">Paket Tiket Pesawat<br>Jakarta Bali</p>
+
+            <p class="sec2-texts4">Rp 605.000 /person</p>
+          </div>
+          <div class="sec2-1">
+            <div class="img-wrap">
+              <img src="{% static 'Images/Rectangle Sec2-4.png' %}" alt="Image here" />
+            </div>
+            <div class="together">
+            <div class="locate"><img src="{% static 'Images/Location.png' %}" alt="location"></div>
+            <p class="sec2-texts1">Kota Semarang</p>
+            </div>
+            <p class="sec2-texts2">Desa Wisata Kandri</p>
+            <p class="sec2-texts3">14 Days</p>
+            <p class="sec2-texts4">Rp 1.400.000 /person</p>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="sect3a">
+          <img src="{% static 'Images/Section3 image.svg' %}" alt="Image here">
+        </div>
+        <div class="sect3b">
+          <div id="space">
+            <h2>Why Choose Us</h2>
+            <p class="secondtext">Enjoy different experiences in every place you visit and<br>discover new and affordable adventures of course.</p>
+                </div>
+                <div id="boxed">
+                  <div class="flight">
+                    <img src="{% static 'Icons/flight.svg' %}" alt="flight icon here">
+                  </div>
+                  <div class="flight-text">
+                    <h4>Flight Ticket</h4>
+                    <p class="flighttext2">Vitae donec pellentesque a aliquam et ultricies auctor. </p>
+                  </div>
+                </div>
+                <div class="sect3c">
+                  <div class="flight">
+                    <img src="{% static 'Icons/Home icon.svg' %}" alt="home icon here">
+                  </div>
+                  <div class="flight-text">
+                    <h4>Accomodation</h4>
+                    <p class="flighttext2">Vitae donec pellentesque a aliquam et ultricies auctor. </p>
+                  </div>
+                </div>
+                <div class="sect3c">
+                  <div class="flight">
+                    <img src="{% static 'Icons/Group.svg' %}" alt="group icon here">
+                  </div>
+                  <div class="flight-texts">
+                    <h4>Packaged Tour</h4>
+                    <p class="flighttext2">Vitae donec pellentesque a aliquam et ultricies auctor. </p>
+                  </div>
+                </div>
+                <div class="sec3last">
+                  <h4>Another Product ></h4>
+                </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div  id="sect4text1">
+          <h1 class="sec2-text1">Plan Your Vacation!</h1>
+        <p class="sec2-text2">For many people organizing a trip is a headache. Register to jointly<br>
+        determine vacations destination and dates</p>
+        </div>
+        
+        <div class="section4-img">
+          <div class="sect4image"><img src="{% static 'Images/section4 image.png' %}" alt="section4 image here"></div>
+        </div>
+      </section>
+
+{% endblock main %}

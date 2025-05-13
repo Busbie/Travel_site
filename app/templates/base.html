@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}  {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block style %}
+    
+    {% endblock style %}
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="{% url 'home' %}" class="logo-link">
+          <h1 class="animate-logo">Travling!</h1>
+        </a>
+        
+        <ul>
+          <li><a href="{% url 'product' %}">Products</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <div class="allow">
+          <a href="signup.html" class="stayup-link">Signup
+            <!-- <button class="stayup">SignUp</button> -->
+          </a>
+        </div>
+      </nav>
+      {% for message in messages %}
+      <p class="notify-{{message.tags}}">{{message}}</p>
+      {% endfor %}
+    </header>
+  
+    <main>
+      {% block main %}
+      {% endblock main %}
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Travling!</h2>
+          <p>Explore the world with ease. Discover new places, book trips, and enjoy unforgettable adventures.</p>
+        </div>
+    
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#top">Back to Top</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-subscribe">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 Travling! All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

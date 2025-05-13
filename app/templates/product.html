@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+{% endblock style %}
+
+
+{% block title %}Product{% endblock title %}
+
+{% block main %}
+    <section id="products" class="products-section">
+  <h2>Our Travel Products</h2>
+
+  <div class="product-category">
+    <h1>Core Travel Products</h1>
+    <ul>
+      <li>Flight Bookings (Domestic & International)</li>
+      <li>Hotel Reservations (Budget to Luxury)</li>
+      <li>Tour Packages (Group, Private, Themed)</li>
+      <li>Transport & Transfers (Cars, Buses, Trains)</li>
+    </ul>
+  </div>
+
+  <div class="product-category">
+    <h1>Destination Services</h1>
+    <ul>
+      <li>Visa & Travel Documentation</li>
+      <li>Travel Insurance (Medical, Cancellation)</li>
+      <li>Travel Guides & Day-by-Day Itineraries</li>
+    </ul>
+  </div>
+
+  <div class="product-category">
+    <h1>Special Interest Travel</h1>
+    <ul>
+      <li>Honeymoon Packages</li>
+      <li>Adventure Travel (Hiking, Safaris, Diving)</li>
+      <li>Pilgrimage Tours (Religious Destinations)</li>
+      <li>Educational & Student Tours</li>
+      <li>Corporate & MICE Travel</li>
+      <li>Cruise Bookings (Ocean, River, Yacht)</li>
+    </ul>
+  </div>
+
+  <div class="product-category">
+    <h1>Value-Added Services</h1>
+    <ul>
+      <li>24/7 Travel Support</li>
+      <li>Currency Exchange Assistance</li>
+      <li>Travel Accessories & Essentials</li>
+      <li>Loyalty & Referral Programs</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock main %}
