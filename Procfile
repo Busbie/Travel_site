@@ -1,3 +1,3 @@
-web: gunicorn django-project.wsgi:application
+web: gunicorn travel.wsgi:application
 
 
