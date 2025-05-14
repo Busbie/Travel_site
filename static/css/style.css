@@ -97,7 +97,7 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: first baseline;
+    justify-content: flex-end;
     width: 100%;
     padding: 10px;
     gap: 50px;
